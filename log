@@ -1,0 +1,36 @@
+
+> vite-reproduction@1.0.0 build
+> node dist/index.js
+
+vite v2.3.8 building for production...
+transforming...
+✓ 1 modules transformed.
+SyntaxError: Unexpected token (1:0)
+    at Parser.pp$4.raise (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:16786:13)
+    at Parser.pp.unexpected (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:14294:8)
+    at Parser.pp$3.parseExprAtom (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:16163:10)
+    at Parser.pp$3.parseExprSubscripts (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:15958:19)
+    at Parser.pp$3.parseMaybeUnary (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:15924:17)
+    at Parser.pp$3.parseExprOps (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:15857:19)
+    at Parser.pp$3.parseMaybeConditional (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:15840:19)
+    at Parser.pp$3.parseMaybeAssign (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:15808:19)
+    at Parser.pp$3.parseExpression (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:15772:19)
+    at Parser.pp$1.parseStatement (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:14484:45)
+    at Parser.pp$1.parseTopLevel (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:14351:21)
+    at Parser.parse (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:14143:15)
+    at Function.parse (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:14174:35)
+    at Graph.contextParse (/Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:20121:38)
+    at Object.transform (/Users/oliver/Documents/vite-reproduction/node_modules/vite/dist/node/chunks/dep-0ed4fbc0.js:31983:27)
+    at /Users/oliver/Documents/vite-reproduction/node_modules/rollup/dist/shared/rollup.js:19995:25 {
+  pos: 0,
+  loc: Position { line: 1, column: 0 },
+  raisedAt: 1,
+  code: 'PLUGIN_ERROR',
+  plugin: 'rollup-plugin-dynamic-import-variables',
+  hook: 'transform',
+  id: '/Users/oliver/Documents/vite-reproduction/example/app.vue',
+  watchFiles: [
+    '/Users/oliver/Documents/vite-reproduction/example/index.js',
+    '/Users/oliver/Documents/vite-reproduction/example/app.vue'
+  ]
+}
